@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@media screen and (min-width: 0px) {
+  .nav {
+    /* background-color: #4b406a; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+
+.nav a {
+    font-family: Joan;
+    color: white;
+    /* padding: 50px 16px; */
+    text-decoration: none;
+    font-size: 25px;
+    margin: 1.5vw
+    /* border: 1px solid yellow; */
+  }
+
+  /* #nav-pages{
+    position: relative;
+    top: 80px;
+  } */
+
+  .nav a:hover {
+    /* background-color: #f7a79e; */
+    color: #f7a79e;
+  }
+
+  .nav a.active {
+    /* background-color: #f7a79e; */
+    margin-left: 150px;
+    margin-right: auto;
+    font-family: Sacramento;
+    font-size: 80px;
+    color: white
+  }
+
+  .nav a.contact {
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: 150px;
+  }
+
+  #nav-pages {
+    display: none;
+  } 
+
+   /* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+#myDropdown {
+  
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+} 
+}
+
+
+@media screen and (min-width: 1000px) {
+
+  #nav-pages {
+    display: flex;
+  }
+
+  .dropdown {
+    display: none;
+  }
+}
